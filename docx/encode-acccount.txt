@@ -1,0 +1,12 @@
+1. Encode username + pass cho connection
+const username = encodeURIComponent("<username>");
+const password = encodeURIComponent("<password>");
+const cluster = "<clusterName>";
+const authSource = "<authSource>";
+const authMechanism = "<authMechanism>";
+let uri = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}`;
+
+
+Fix bug : Mongodb Atlas: not authorized on admin to execute command
++ Bổ sung thêm tên db vào URL
+https://stackoverflow.com/questions/49101567/mongodb-atlas-not-authorized-on-admin-to-execute-command
