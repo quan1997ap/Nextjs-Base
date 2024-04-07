@@ -10,3 +10,7 @@ let uri = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSo
 Fix bug : Mongodb Atlas: not authorized on admin to execute command
 + Bổ sung thêm tên db vào URL
 https://stackoverflow.com/questions/49101567/mongodb-atlas-not-authorized-on-admin-to-execute-command
+
+
+2. mongodb
+https://docs.nestjs.com/techniques/mongodb

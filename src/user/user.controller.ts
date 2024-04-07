@@ -32,8 +32,8 @@ export class UserController {
     // ╩ ╩╚═╝ ╩ ╩ ╩╚═╝╝╚╝ ╩ ╩╚═╝╩ ╩ ╩ ╚═╝
     @Post()
     @HttpCode(HttpStatus.CREATED)
-    @ApiOperation({title: 'Register user',})
-    @ApiCreatedResponse({})
+    @ApiOperation({title: 'Register user',}) // defined swagger description
+    @ApiCreatedResponse({}) // defined swagger
     async register(@Body() createUserDto: CreateUserDto) {
         return await this.userService.create(createUserDto);
     }
